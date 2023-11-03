@@ -9,6 +9,9 @@
         display: flex;
       }
       #nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 530px;
         width: 300px;
         background-color: black;
@@ -31,7 +34,7 @@
         display: flex;
       }
       #content-1 {
-        height: 80%;
+        height: 410px;
         width: 100%;
       }
       #queries {
@@ -40,31 +43,43 @@
         display: flex;
       }
       #textt {
-        width: 1000px;
+        width: 600px;
         height: 60px;
-        /* border-radius: 10px; */
+        border-radius: 10px;
       }
       #addbttn {
         height: 60px;
-        background-color: rgb(160, 175, 145);
+        /* background-color: rgb(160, 175, 145); */
         border-radius: 10px;
+        border-color: white;
+      }
+      #addbttn:hover {
+        background-color: cadetblue;
       }
       #userid{
-        margin-top: 490px;
         text-align: center;
       }
-      #login{
+      #login {
         width: 150px;
         height: 30px;
         border-radius: 15px;
         background-color: darkslategray;
+      }
+      #login:hover {
+        background-color: darkgreen;
+      }
+      #history h3 {
+        color: blue;
       }
     </style>
   </head>
   <body>
     <div class="boxx">
       <div id="nav">
-        <div id="history"></div>
+        <div id="history">
+          <h3>History</h3>
+        </div>
+
         <div id="userid">
           <button id="login">login</button>
         </div>
@@ -84,7 +99,9 @@
         <div id="content-1"></div>
         <div id="queries">
           <input id="textt" type="text" placeholder="Send Problem" />
-          <button id="addbttn">Send</button>
+          <button id="addbttn">
+            <img src="send.png" alt="" style="width: 20px; height: 20px" />
+          </button>
         </div>
       </div>
     </div>
