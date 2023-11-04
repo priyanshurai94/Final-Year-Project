@@ -14,7 +14,7 @@
         justify-content: space-between;
         height: 530px;
         width: 300px;
-        background-color: black;
+        background-color: whitesmoke;
       }
       #content {
         height: 530px;
@@ -46,6 +46,7 @@
         width: 600px;
         height: 60px;
         border-radius: 10px;
+        border-color: gainsboro;
       }
       #addbttn {
         height: 60px;
@@ -56,7 +57,7 @@
       #addbttn:hover {
         background-color: cadetblue;
       }
-      #userid{
+      #userid {
         text-align: center;
       }
       #login {
@@ -68,16 +69,76 @@
       #login:hover {
         background-color: darkgreen;
       }
-      #history h3 {
-        color: blue;
+      #newtext h3 {
+        color: rgb(255, 140, 0);
+        text-align: center;
+      }
+      #newtext {
+        text-align: center;
+        margin-top: 4px;
+      }
+      #newtextbttn {
+        width: 200px;
+        height: 30px;
+        background-color: aqua;
+      }
+      #history {
+        display: flex;
+        flex-direction: column;
+        height: 400px; 
+        overflow-y: auto; 
+        padding-right: 10px;
+      }
+
+      #div1,
+      #div2,
+      #div3,
+      #div4,
+      #div5,
+      #div6,
+      #div7,
+      #div8,
+      #div9 {
+        /* height: 35px;
+        width: 250px; */
+        margin-left: 15px; 
+        margin-bottom: 10px; 
+      }
+      #history h4 {
+        color: cadetblue;
+      }
+      #div1:hover,
+      #div2:hover,
+      #div3:hover,
+      #div4:hover,
+      #div5:hover,
+      #div6:hover,
+      #div7:hover,
+      #div8:hover,
+      #div9:hover {
+        background-color: grey;
       }
     </style>
   </head>
   <body>
     <div class="boxx">
       <div id="nav">
-        <div id="history">
+        <div id="newtext">
+          <button id="newtextbttn">+ New Chat</button>
           <h3>History</h3>
+        </div>
+        <div id="history">
+          <h4>Recent</h4>
+          <div id="div1">hhhhhhhhhhhhhhhhh</div>
+          <div id="div2">hhhhhhhhhhhhhhhhh</div>
+          <div id="div3">hhhhhhhhhhhhhhhhh</div>
+          <div id="div4">hhhhhhhhhhhhhhhhh</div>
+          <h4>Previous</h4>
+          <div id="div5">hhhhhhhhhhhhhhhhh</div>
+          <div id="div6">hhhhhhhhhhhhhhhhh</div>
+          <div id="div7">hhhhhhhhhhhhhhhhh</div>
+          <div id="div8">hhhhhhhhhhhhhhhhh</div>
+          <div id="div9">hhhhhhhhhhhhhhhhh</div>
         </div>
 
         <div id="userid">
@@ -98,12 +159,20 @@
 
         <div id="content-1"></div>
         <div id="queries">
-          <input id="textt" type="text" placeholder="Send Problem" />
+          <textarea
+            id="textt"
+            placeholder="Send Problem"
+            rows="4"
+            cols="50"
+          ></textarea>
           <button id="addbttn">
             <img src="send.png" alt="" style="width: 20px; height: 20px" />
           </button>
         </div>
       </div>
     </div>
+
+    <script></script>
   </body>
 </html>
+
