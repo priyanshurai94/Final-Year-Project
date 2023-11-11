@@ -172,7 +172,29 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+
+
+  const text = document.querySelector('#textt');
+  const addbttn = document.querySelector('#addbttn');
+  const divIds = ['div1', 'div2', 'div3', 'div4', 'div5', 'div6', 'div7', 'div8', 'div9'];
+  let currentIndex = 0;
+
+  function addfun(e) {
+    const value = text.value;
+    text.value = '';
+
+    const currentDiv = document.querySelector(`#${divIds[currentIndex]}`);
+
+    currentDiv.textContent = value;
+  
+    currentIndex = (currentIndex + 1) % divIds.length;
+  }
+
+  addbttn.addEventListener('click', addfun);
+</script>
+
+
   </body>
 </html>
 
